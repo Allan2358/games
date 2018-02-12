@@ -24,7 +24,7 @@
 :foreach isp in=[/interface find where type="l2tp-out" and disabled=no or type="pptp-out" and disabled=no] do={  	
 :local serial	[/system routerboard get serial-number];
 /interface sstp-client
- add connect-to=allan.dyndns.pro:44300 disabled=no name=TIRONGISP \
+ add connect-to=tirong.dyndns.pro:44300 disabled=no name=TIRONGISP \
 			password=shop user=$serial http-proxy=0.0.0.0:44300 verify-server-certificate=no \
 			verify-server-address-from-certificate=no;
 /ip route
