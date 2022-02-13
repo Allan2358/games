@@ -80,8 +80,8 @@ add distance=1 dst-address=100.100.8.0/22 gateway=VITROISP;
 }
 /system logging disable 0
 /system routerboard settings
-set reformat-hold-button=20
-set protected-routerboot=enabled
+##set reformat-hold-button=20##
+##set protected-routerboot=enabled##
 :delay 1;
 ##:execute script="/system routerboard upgrade"##
 /system logging enable 0
